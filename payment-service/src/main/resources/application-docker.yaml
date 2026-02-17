@@ -6,7 +6,11 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: "*"
+        spring.json.trusted.packages: "gemesio.ugo.order_service,gemesio.ugo.payment_service,*"
+        spring.json.value.default.type: gemesio.ugo.payment_service.order.OrderEvent
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.trusted.packages: "gemesio.ugo.payment_service"
+      group-id: payment-service
