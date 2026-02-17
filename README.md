@@ -1,6 +1,7 @@
 # Microservices Project - Order & Payment Processing
 
 A Spring Boot microservices application demonstrating asynchronous event-driven communication using Apache Kafka. This project consists of two independent services: **Order Service** (Producer) and **Payment Service** (Consumer).
+<img width="784" height="228" alt="image" src="https://github.com/user-attachments/assets/b28eb5de-b4ac-49f6-b9a2-4d0e9f5df998" />
 
 ## Table of Contents
 
